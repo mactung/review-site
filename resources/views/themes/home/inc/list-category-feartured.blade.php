@@ -1,0 +1,59 @@
+<ul>
+    <li class="active">
+        <span
+            data-tab-cat="194"
+            data-post-num="7"
+            data-sorting="modified"
+            data-ordering="asc"
+            data-title-length="9"
+            >Politics</span
+        >
+    </li>
+    <li>
+        <span
+            data-tab-cat="190"
+            data-post-num="7"
+            data-sorting="modified"
+            data-ordering="asc"
+            data-title-length="9"
+            >Sports</span
+        >
+    </li>
+    <li>
+        <span
+            data-tab-cat="197"
+            data-post-num="7"
+            data-sorting="modified"
+            data-ordering="asc"
+            data-title-length="9"
+            >Games</span
+        >
+    </li>
+    <li>
+        <span
+            data-tab-cat="199"
+            data-post-num="7"
+            data-sorting="modified"
+            data-ordering="asc"
+            data-title-length="9"
+            >Life style</span
+        >
+    </li>
+    <li>
+        <span
+            data-tab-cat="198"
+            data-post-num="7"
+            data-sorting="modified"
+            data-ordering="asc"
+            data-title-length="9"
+            >Health</span
+        >
+    </li>
+    <li>
+        <div class="more-link">
+            <a href="demo/wordpress/themes/barta/category/politics/"
+                >More<i class="fa fa-angle-right" aria-hidden="true"></i
+            ></a>
+        </div>
+    </li>
+</ul>
