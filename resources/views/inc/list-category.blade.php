@@ -10,11 +10,13 @@
         @foreach ($categories as $category)
         <div class="col-sm-6 col-md-4 mb-5 mb-sm-2">
             <div class="position-relative image-hover">
-                <img
-                    src="{{$category->image_url }}"
-                    class="img-fluid"
-                    alt="world-news"
-                />
+                <a href="/category/{{ $category->slug }}">
+                    <img
+                        src="{{$category->image_url }}"
+                        class="img-fluid thumb-category"
+                        alt="world-news"
+                    />
+                </a>
                 <span class="thumb-title">{{ $category->name}}</span>
             </div>
         </div>

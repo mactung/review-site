@@ -27,7 +27,7 @@
         <!-- End plugin css for this page -->
         <link rel="shortcut icon" href="/assets/images/favicon.png" />
         <!-- inject:css -->
-        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="/assets/css/style.css?v={{time()}}" />
         @yield('css')
         <!-- endinject -->
         {{ getOption('head') }}
