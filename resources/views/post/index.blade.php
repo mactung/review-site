@@ -26,7 +26,7 @@
 
             </div>
         </div>
-        <div class="col-sm-12 mt-5">
+        <div class="col-sm-12 mt-5 w-100">
             {!! $post->content !!}
         </div>
     </div>

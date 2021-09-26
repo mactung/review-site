@@ -20,7 +20,7 @@ class Controller extends BaseController
     }
     public function getCategories ()
     {
-        $categories =  Category::where('status', 'active')->get();
+        $categories =  Category::where('status', 'active')->whereNull('parent_id')->get();
         View::share(['categories' => $categories]);
         return $categories;
     }

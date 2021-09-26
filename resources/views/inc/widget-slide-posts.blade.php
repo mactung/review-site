@@ -12,7 +12,7 @@
 
             <div class="position-relative image-hover">
                 <a href="/reviews/{{ $post->slug }}" class="font-weight-bold text-dark pt-2">
-                    <img src="{{ $post->thumbnail }}" height="260" style="object-fit: cover;"class="img-fluid" alt="world-news" />
+                    <img src="{{ $post->thumbnail }}" height="360" style="object-fit: cover; min-width: 360px;"class="img-fluid" alt="world-news" />
                 </a>
                 <span class="thumb-title"><a href="/category/{{ $post->category->slug }}" class="font-weight-bold text-dark">{{ $post->category->name }}</a></span>
             </div>

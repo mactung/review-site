@@ -7,5 +7,6 @@
         'widgetName' => 'Wolrd news',
         'data' => $recentPosts
     ])
+    @include('inc.list-category')
 </div>
 @endsection
