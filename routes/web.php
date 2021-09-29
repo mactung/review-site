@@ -17,7 +17,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/about-us', function () {
+    return view('about-us');
+});
 
 Route::get('/reviews/{slug}', [PostController::class, 'index']);
 
 Route::get('/category/{slug}', [CategoryController::class, 'index']);
+
+
+Route::group([
+    'middleware' => 'api',
+    'prefix' => 'auth'
+
+],
+    function ($router) {
+        Route::post('/login', [AuthController::class, 'login']);
+        Route::post('/register', [AuthController::class, 'register']);
+        Route::post('/logout', [AuthController::class, 'logout']);
+        Route::post('/refresh', [AuthController::class, 'refresh']);
+        Route::get('/user-profile', [AuthController::class, 'userProfile']);
+    }
+);

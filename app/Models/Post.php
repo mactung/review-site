@@ -13,8 +13,14 @@ class Post extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
     public function author()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function meta()
+    {
+        return $this->hasMany(PostMeta::class);
     }
 }

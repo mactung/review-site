@@ -18,7 +18,11 @@ class HomeController extends Controller
                         ->limit(7)
                         ->get(),
         ];
+
+        $pinPosts = Post::with(['meta' => function($query) {
+            $query->where('key', 'home_pin');
+        }, 'author'])->limit(6)->get();
         
-        return View::make('index', compact(array('featuredPosts')));
+        return View::make('index', compact(array('featuredPosts', 'pinPosts')));
     }
 }
